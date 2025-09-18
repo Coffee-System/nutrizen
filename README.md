@@ -103,6 +103,8 @@ Estamos usando tecnologias modernas para construir uma plataforma rápida, robus
 * **Inteligência Artificial:** APIs da OpenAI e modelos da comunidade HuggingFace
 * **Hospedagem:** Vercel & Supabase
 
+➡️ **Para uma visão mais aprofundada da nossa arquitetura e padrões de código, confira nossa [Documentação Técnica](/docs).**
+
 ---
 
 ## 🏛️ Licença
