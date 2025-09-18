@@ -63,7 +63,13 @@ Seu conhecimento é o que dará credibilidade e eficácia ao NutriZen.
 
 ### 🧑‍💻 Para Desenvolvedores: Contribuindo com Código
 
-Se você quer colocar a mão na massa, o processo é o seguinte.
+Se você quer colocar a mão na massa, o processo é o seguinte. **Antes de começar, recomendamos fortemente a leitura dos nossos guias de desenvolvimento para entender nossos padrões:**
+
+* **📖 [Guia de Desenvolvimento Frontend](/docs/FRONTEND_GUIDE.md)**
+* **⚙️ [Guia de Desenvolvimento Backend](/docs/BACKEND_GUIDE.md)**
+
+1.  **Faça um Fork do Repositório:** ...
+...
 
 1.  **Faça um Fork do Repositório:** Crie uma cópia do projeto na sua conta.
 2.  **Clone o seu Fork:** Clone a *sua* cópia do projeto para a sua máquina. Lembre-se de substituir `<SEU-USUARIO>` pelo seu nome de usuário do GitHub.
