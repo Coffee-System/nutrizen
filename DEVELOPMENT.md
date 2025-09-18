@@ -1,4 +1,4 @@
-# Guia de Desenvolvimento Local do NutriZen
+# Guia de Desenvolvimento Local do NutriZen 👨‍💻
 
 Olá, contribuidor! Ficamos muito felizes em ter você por aqui. Este guia irá ajudá-lo a configurar o ambiente de desenvolvimento e a rodar o NutriZen na sua máquina local.
 
