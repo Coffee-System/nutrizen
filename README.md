@@ -111,6 +111,12 @@ Estamos usando tecnologias modernas para construir uma plataforma rápida, robus
 
 Este projeto é distribuído sob a Licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
+**Para mais informações consulte:**
+
+[Política de Privacidade](legal/PRIVACY_POLICY.md)
+<br>
+[Termos de Consentimento](legal/TERMS_OF_SERVICE.md) 
+
 A marca "NutriZen" e seu logo são marcas registradas da Coffee System.
 
 ---
