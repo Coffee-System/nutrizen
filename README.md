@@ -84,10 +84,14 @@ A melhor maneira de começar é entrando em nossa comunidade.
 1.  **💬 Entre no nosso Discord:** É o principal ponto de encontro. Apresente-se, participe das conversas e encontre áreas para colaborar.
 2.  **💡 Explore as Tarefas Abertas:** Dê uma olhada em nossas [Issues no GitHub](https://github.com/Coffee-System/nutrizen/issues). É lá que organizamos tudo o que precisa ser feito.
 3.  **📖 Leia nosso Guia Detalhado:** Para entender o passo a passo de como sugerir, criar e enviar suas contribuições, confira nosso [**Guia de Contribuição**](CONTRIBUTING.md).
+4.  **👨‍💻 Para configurar seu ambiente de desenvolvimento local, veja nosso [Guia de Setup Local](DEVELOPMENT.md).**
+  
+<br>
 
 Procurando um bom ponto de partida? Veja as [**tarefas para iniciantes (`good first issue`)**](https://github.com/Coffee-System/nutrizen/labels/good%20first%20issue).
 
 ---
+
 
 ## 🛠️ Stack Tecnológico
 
