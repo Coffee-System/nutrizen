@@ -1,41 +1,41 @@
-# Guia de Desenvolvimento Backend do NutriZen 🧩
+# NutriZen Backend Development Guide 🧩
 
-Este guia contém exemplos e padrões para o desenvolvimento de APIs no NutriZen. Usamos o App Router do Next.js para criar nossos endpoints.
+This guide contains examples and standards for API development in NutriZen. We use the Next.js App Router to create our endpoints.
 
-## Estrutura de API
+## API Structure
 
-As rotas de API ficam dentro de `/apps/web/app/api`. Cada rota é uma pasta que contém um arquivo `route.ts`.
+API routes are located within `/apps/web/app/api`. Each route is a folder containing a `route.ts` file.
 
-* **Exemplo:** A rota `GET /api/hello` é implementada pelo arquivo `/apps/web/app/api/hello/route.ts`.
+* **Example:** The `GET /api/hello` route is implemented by the file `/apps/web/app/api/hello/route.ts`.
 
-## Padrão de Rota de API Pública
+## Public API Route Standard
 
-Uma rota pública pode ser acessada por qualquer cliente sem necessidade de autenticação.
+A public route can be accessed by any client without authentication.
 
-**Exemplo: `/apps/web/app/api/hello/route.ts`**
+**Example: `/apps/web/app/api/hello/route.ts`**
 ```ts
 // /apps/web/app/api/hello/route.ts
 
 import { NextResponse } from 'next/server';
 
-// 1. Exporte uma função assíncrona nomeada com o método HTTP (GET, POST, etc.).
+// 1. Export an async function named after the HTTP method (GET, POST, etc.).
 export async function GET(request: Request) {
-  // 2. A lógica do endpoint fica aqui.
+  // 2. The endpoint logic goes here.
   const data = {
-    message: 'Olá do backend do NutriZen!',
+    message: 'Hello from the NutriZen backend!',
     timestamp: new Date().toISOString(),
   };
 
-  // 3. Use NextResponse.json() para retornar uma resposta JSON com o status code correto.
+  // 3. Use NextResponse.json() to return a JSON response with the correct status code.
   return NextResponse.json(data);
 }
 ```
 
-## Padrão de Rota de API Protegida
+## Protected API Route Standard
 
-Uma rota protegida requer que o usuário esteja autenticado. Ela deve verificar a sessão do usuário antes de executar sua lógica.
+A protected route requires the user to be authenticated. It must verify the user's session before executing its logic.
 
-**Exemplo: `/apps/web/app/api/profile/route.ts`**
+**Example: `/apps/web/app/api/profile/route.ts`**
 ```ts
 // /apps/web/app/api/profile/route.ts
 
@@ -44,20 +44,20 @@ import { createRouteHandlerClient } from '@supabase/auth-helpers-nextjs';
 import { cookies } from 'next/headers';
 
 export async function GET(request: Request) {
-  // 1. Crie um cliente Supabase específico para Route Handlers.
+  // 1. Create a Supabase client specific to Route Handlers.
   const supabase = createRouteHandlerClient({ cookies });
 
   try {
-    // 2. Tente obter a sessão do usuário a partir dos cookies da requisição.
-    const { data: { session }, error: sessionError } = await supabase.auth.getSession();
+    // 2. Attempt to get the user's session from the request cookies.
+    const { data: { session } } = await supabase.auth.getSession();
 
-    // 3. Se não houver sessão, retorne um erro 401 (Não Autorizado).
+    // 3. If there is no session, return a 401 Unauthorized error.
     if (!session) {
-      return NextResponse.json({ error: 'Não autorizado' }, { status: 401 });
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    // 4. Se houver sessão, execute a lógica protegida.
-    // Exemplo: buscar dados do perfil do usuário no banco de dados.
+    // 4. If a session exists, execute the protected logic.
+    // Example: fetch the user's profile data from the database.
     const { data: userProfile, error: profileError } = await supabase
       .from('profiles')
       .select('*')
@@ -71,7 +71,7 @@ export async function GET(request: Request) {
     return NextResponse.json(userProfile);
 
   } catch (error) {
-    return NextResponse.json({ error: 'Erro interno do servidor' }, { status: 500 });
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }
 ```
