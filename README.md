@@ -2,7 +2,7 @@
 <p align="right"><a href="README.md"><strong>English</strong></a> | <a href="README.pt-BR.md">Português</a></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Coffee-System/nutrizen/main/src/logo_nutrizen.jpg" alt="NutriZen Logo" width="150"/>
+  <img src="https://raw.githubusercontent.com/Coffee-System/nutrizen/main/docs/images/logo_nutrizen.jpg" alt="NutriZen Logo" width="150"/>
 </p>
 
 <h3 align="center">Your health journey, built by the community.</h3>
