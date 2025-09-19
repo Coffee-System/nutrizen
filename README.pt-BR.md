@@ -1,5 +1,5 @@
 # NutriZen 😺
-
+<p align="right"><a href="README.md">English</a> | <strong>Português</strong></p>
 <p align="center">
   <img src="https://raw.githubusercontent.com/Coffee-System/nutrizen/main/src/logo_nutrizen.jpg" alt="NutriZen Logo" width="150"/>
 </p>
