@@ -1,53 +1,52 @@
-# Arquitetura do NutriZen 🫚
+# NutriZen Architecture 🏗️
 
-Este documento descreve a arquitetura de alto nível do sistema NutriZen, os componentes principais e as decisões técnicas que guiam nosso desenvolvimento.
+This document describes the high-level architecture of the NutriZen system, its main components, and the technical decisions that guide our development.
 
-## Filosofia de Arquitetura
+## Architectural Philosophy
 
-Nossa arquitetura é guiada pelos seguintes princípios:
+Our architecture is guided by the following principles:
 
-* **Comece Simples, Escale Depois:** Usamos serviços gerenciados (BaaS como o Supabase) para acelerar o MVP, com um plano claro para evoluir para soluções mais robustas conforme a necessidade.
-* **Ecossistema JavaScript/TypeScript Unificado:** Maximizamos a reutilização de código, lógica e talentos usando um stack baseado em TypeScript de ponta a ponta (frontend, backend, mobile).
-* **Monorepo:** Gerenciamos todas as nossas aplicações (`web`, `mobile`) e pacotes compartilhados (`ui`, `utils`) em um único repositório para manter a consistência.
+* **Start Simple, Scale Later:** We use managed services (BaaS like Supabase) to accelerate the MVP, with a clear plan to evolve to more robust solutions as needed.
+* **Unified JavaScript/TypeScript Ecosystem:** We maximize the reuse of code, logic, and talent by using a TypeScript-based stack from end to end (frontend, backend, mobile).
+* **Monorepo:** We manage all our applications (`web`, `mobile`) and shared packages (`ui`, `utils`) in a single repository to maintain consistency.
 
-## Visão Geral dos Componentes
+## Component Overview
 
-Abaixo está um diagrama que ilustra a interação entre os principais componentes do nosso sistema.
+Below is a diagram illustrating the interaction between the main components of our system.
 
 ```mermaid
 graph TD
-    A[Usuário] -->|"App (React Native) / Web (Next.js)"| B[Frontend]
-    B --> C{"Backend Gateway (Node.js/Express ou Edge Functions)"}
+    A[User] -->|"App (React Native) / Web (Next.js)"| B[Frontend]
+    B --> C{"Backend Gateway (Node.js/Express or Edge Functions)"}
     
-    subgraph "Infraestrutura & Backend"
-        C --> D["Banco de Dados (PostgreSQL)"]
-        C --> G["Autenticação (Supabase Auth / NextAuth)"]
+    subgraph "Infrastructure & Backend"
+        C --> D["Database (PostgreSQL)"]
+        C --> G["Authentication (Supabase Auth / NextAuth)"]
         C --> F["Storage (S3 / Supabase Storage)"]
-        C --> K["Pagamentos (Stripe Connect)"]
+        C --> K["Payments (Stripe Connect)"]
     end
 
-    subgraph "Serviços de IA"
+    subgraph "AI Services"
         C --> E["IA Services (OpenAI / HuggingFace)"]
     end
 
-    subgraph "Integrações Externas"
-        C --> H["APIs de Wearables (Apple Health, Google Fit)"]
+    subgraph "External Integrations"
+        C --> H["Wearables API (Apple Health, Google Fit)"]
         C --> I["Video/Chat (WebRTC / Twilio)"]
     end
 
-    subgraph "Análise e Monitoramento"
+    subgraph "Analytics & Monitoring"
         D --> J["Analytics (Metabase / Grafana)"]
         E --> J
     end
 ```
 
+* **Frontend:** A web application built with Next.js and a mobile app with React Native. Responsible for the entire user interface and experience.
+* **Backend:** Initially orchestrated by Edge Functions and Supabase services, with a migration plan to a dedicated Node.js (NestJS) backend for complex business logic.
+* **Database:** We use PostgreSQL, hosted on Supabase, for its robustness and scalability.
+* **AI Services:** We delegate AI tasks (generating diet/workout plans) to external APIs like OpenAI to ensure high-quality results.
 
-* **Frontend:** Aplicação web construída com Next.js e mobile com React Native. Responsável por toda a interface e experiência do usuário.
-* **Backend:** Orquestrado inicialmente por Edge Functions e serviços do Supabase, com um plano de migração para um backend dedicado em Node.js (NestJS) para lógicas complexas.
-* **Banco de Dados:** Usamos PostgreSQL, hospedado no Supabase, por sua robustez e escalabilidade.
-* **Serviços de IA:** Delegamos as tarefas de IA (geração de planos de dieta/treino) para APIs externas como a da OpenAI para garantir resultados de alta qualidade.
+## Key Decisions
 
-## Decisões-Chave
-
-* **Por que Supabase no início?** Para reduzir drasticamente a complexidade e o custo inicial, permitindo que foquemos em entregar valor no MVP.
-* **Por que Next.js?** Por sua performance (SSR/SSG), excelente ecossistema e otimizações que facilitam o desenvolvimento de uma aplicação web moderna e rápida.
+* **Why Supabase initially?** To drastically reduce initial complexity and cost, allowing us to focus on delivering value in the MVP.
+* **Why Next.js?** For its performance (SSR/SSG), excellent ecosystem, and optimizations that facilitate the development of a modern and fast web application.

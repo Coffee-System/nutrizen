@@ -1,87 +1,87 @@
-# Guia de Desenvolvimento Local do NutriZen 👨‍💻
+# NutriZen Local Development Guide 👨‍💻
 
-Olá, contribuidor! Ficamos muito felizes em ter você por aqui. Este guia irá ajudá-lo a configurar o ambiente de desenvolvimento e a rodar o NutriZen na sua máquina local.
+Hello, contributor! We're thrilled to have you here. This guide will help you set up your development environment and run NutriZen on your local machine.
 
-## Pré-requisitos
+## Prerequisites
 
-Antes de começar, certifique-se de que você tem as seguintes ferramentas instaladas:
+Before you begin, ensure you have the following tools installed:
 
-* **Node.js:** Versão 18.x ou superior. [Baixe aqui](https://nodejs.org/)
-* **pnpm:** Usamos o `pnpm` como nosso gerenciador de pacotes. Após instalar o Node.js, instale-o com:
+* **Node.js:** Version 18.x or higher. [Download here](https://nodejs.org/)
+* **pnpm:** We use `pnpm` as our package manager. After installing Node.js, install it globally with:
     ```bash
     npm install -g pnpm
     ```
-* **Git:** Essencial para controle de versão. [Baixe aqui](https://git-scm.com/)
+* **Git:** Essential for version control. [Download here](https://git-scm.com/)
 
-## 1. Configuração do Projeto
+## 1. Project Setup
 
-Siga estes passos para ter o código pronto para rodar.
+Follow these steps to get the code ready to run.
 
-### a. Fork e Clone
+### a. Fork and Clone
 
-Primeiro, faça um [Fork](https://github.com/Coffee-System/nutrizen/fork) do repositório para a sua conta no GitHub.
+First, [Fork](https://github.com/Coffee-System/nutrizen/fork) the repository to your own GitHub account.
 
-Depois, clone o **seu fork** para a sua máquina local (lembre-se de substituir `<SEU-USUARIO>` pelo seu nome de usuário):
+Next, clone **your fork** to your local machine (remember to replace `<YOUR-USERNAME>` with your GitHub username):
 
 ```bash
-git clone [https://github.com/](https://github.com/)<SEU-USUARIO>/nutrizen.git
+git clone [https://github.com/](https://github.com/)<YOUR-USERNAME>/nutrizen.git
 cd nutrizen
 ```
 
-### b. Instale as Dependências
+### b. Install Dependencies
 
-Agora, instale todas as dependências do projeto usando `pnpm`:
+Now, install all project dependencies using `pnpm`:
 
 ```bash
 pnpm install
 ```
 
-## 2. Configuração das Variáveis de Ambiente
+## 2. Environment Variables Setup
 
-Para que o aplicativo se conecte corretamente aos serviços externos (como o banco de dados), você precisa configurar suas variáveis de ambiente.
+For the application to connect correctly to external services (like the database), you need to configure your environment variables.
 
-### a. Configure o Supabase
+### a. Configure Supabase
 
-O NutriZen usa o [Supabase](https://supabase.com/) para banco de dados e autenticação. Você precisará criar um projeto gratuito para o desenvolvimento local.
+NutriZen uses [Supabase](https://supabase.com/) for its database and authentication. You will need to create a free project for local development.
 
-1.  Crie uma conta gratuita no [Supabase](https://app.supabase.com/).
-2.  Crie um novo projeto (ex: "nutrizen-dev").
-3.  Após a criação do projeto, vá em **Project Settings > API**.
-4.  Você encontrará sua **URL do Projeto** e sua **chave de API `anon (public)`**.
+1.  Create a free account at [Supabase](https://app.supabase.com/).
+2.  Create a new project (e.g., "nutrizen-dev").
+3.  After the project is created, go to **Project Settings > API**.
+4.  There you will find your **Project URL** and your **`anon (public)` API key**.
 
-### b. Crie o Arquivo `.env.local`
+### b. Create the `.env.local` File
 
-Na raiz da aplicação web (`/apps/web`), crie um arquivo chamado `.env.local`. **Este arquivo não deve ser enviado para o GitHub.**
+In the root of the web application (`/apps/web`), create a file named `.env.local`. **This file should not be committed to GitHub.**
 
-Copie o conteúdo do arquivo de exemplo (`.env.example`) para o seu novo arquivo e preencha com as suas chaves do Supabase:
+Copy the contents of the example file (`.env.example`) into your new file and fill it with your Supabase keys:
 
 ```env
-# Arquivo: /apps/web/.env.local
+# File: /apps/web/.env.local
 
 # Supabase
-NEXT_PUBLIC_SUPABASE_URL="SUA_URL_DO_PROJETO_SUPABASE_AQUI"
-NEXT_PUBLIC_SUPABASE_ANON_KEY="SUA_CHAVE_ANON_KEY_DO_SUPABASE_AQUI"
+NEXT_PUBLIC_SUPABASE_URL="YOUR_SUPABASE_PROJECT_URL_HERE"
+NEXT_PUBLIC_SUPABASE_ANON_KEY="YOUR_SUPABASE_ANON_KEY_HERE"
 
-# Outras variáveis de ambiente do projeto irão aqui no futuro...
+# Other project environment variables will go here in the future...
 ```
 
-**Importante:** Você também precisará criar as tabelas do banco de dados no seu projeto Supabase. Nós iremos disponibilizar o script SQL para isso em breve.
+**Important:** You will also need to create the database tables in your Supabase project. We will provide the SQL script for this soon.
 
-## 3. Rodando a Aplicação
+## 3. Running the Application
 
-Com tudo configurado, você está pronto para rodar o servidor de desenvolvimento.
+With everything set up, you are ready to run the development server.
 
-A partir da raiz do monorepo, execute o seguinte comando:
+From the root of the monorepo, execute the following command:
 
 ```bash
-# Para rodar a aplicação web (Next.js)
+# To run the web application (Next.js)
 pnpm --filter web dev
 ```
 
-Abra seu navegador e acesse [http://localhost:3000](http://localhost:3000). Você deverá ver a aplicação NutriZen rodando!
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000). You should see the NutriZen application running!
 
-## Encontrou um Problema?
+## Found a Problem?
 
-Se algo não funcionou como o esperado, por favor, [abra uma Issue](https://github.com/Coffee-System/nutrizen/issues) e nos conte o que aconteceu. Estamos aqui para ajudar!
+If something didn't work as expected, please [open an Issue](https://github.com/Coffee-System/nutrizen/issues) and tell us what happened. We're here to help!
 
-Obrigado por contribuir!
+Thank you for contributing!

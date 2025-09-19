@@ -1,120 +1,124 @@
 # NutriZen 😺
-
+<p align="right"><strong>English</strong> | <a href="README.pt-BR.md">Português</a></p>
 <p align="center">
   <img src="https://raw.githubusercontent.com/Coffee-System/nutrizen/main/src/logo_nutrizen.jpg" alt="NutriZen Logo" width="150"/>
 </p>
 
-<h3 align="center">Sua jornada de saúde, construída pela comunidade.</h3>
+<h3 align="center">Your health journey, built by the community.</h3>
 
 <p align="center">
-  Nutrição, treino e bem-estar em um app 100% gratuito, open-source e sem anúncios.
+  Nutrition, training, and wellness in a 100% free, open-source, and ad-free app.
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Licença MIT">
-    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs são bem-vindos">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome">
     <a href="https://github.com/Coffee-System/nutrizen/graphs/contributors">
-        <img src="https://img.shields.io/github/contributors/Coffee-System/nutrizen.svg" alt="Contribuidores">
+        <img src="https://img.shields.io/github/contributors/Coffee-System/nutrizen.svg" alt="Contributors">
     </a>
     <a href="https://discord.gg/VpmkEKMa7D">
-        <img src="https://img.shields.io/discord/1418265631987466254?color=7289DA&label=Discord&logo=discord&logoColor=white" alt="Chat no Discord">
+        <img src="https://img.shields.io/discord/1418265631987466254?color=7289DA&label=Discord&logo=discord&logoColor=white" alt="Chat on Discord">
     </a>
 </p>
 
 ---
 
-## 💬 Junte-se à Nossa Comunidade
+## 💬 Join Our Community
 
-O NutriZen é feito de pessoas. Siga-nos, tire dúvidas e participe das conversas em nossas redes.
+NutriZen is made of people. Follow us, ask questions, and join the conversation on our social channels.
 
 <p align="center">
   <a href="https://discord.gg/VpmkEKMa7D">
-    <img src="https://img.shields.io/badge/-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
+    <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
   </a>
-  <a href="[https://www.instagram.com/nutrizenappofficial/]">
-    <img src="https://img.shields.io/badge/-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+  <a href="https://www.instagram.com/nutrizenappofficial/">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
   </a>
-  <a href="[https://www.reddit.com/r/NutrizenApp]">
-    <img src="https://img.shields.io/badge/-FF4500?style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit">
+  <a href="https://www.reddit.com/r/NutrizenApp">
+    <img src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white" alt="Reddit">
   </a>
-  <a href="[https://x.com/nutrizenapp]">
-    <img src="https://img.shields.io/badge/-000000?style=for-the-badge&logo=X&logoColor=white" alt="X">
+  <a href="https://x.com/nutrizenapp">
+    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=X&logoColor=white" alt="X">
   </a>
 </p>
 
 ---
 
-## 💡 A Nossa Filosofia
+## 💡 Our Philosophy
 
-O mercado de aplicativos de saúde está quebrado. Somos bombardeados com anúncios, nossas informações são vendidas e os algoritmos que ditam nossa saúde são caixas-pretas.
+The health app market is broken. We are bombarded with ads, our data is sold, and the algorithms dictating our health are black boxes.
 
-**O NutriZen nasceu para ser diferente.**
+**NutriZen was born to be different.**
 
-Nossa missão é criar a ferramenta de saúde mais completa, confiável e transparente do mundo, e entregá-la gratuitamente para todos.
+Our mission is to create the most complete, reliable, and transparent health tool in the world, and deliver it for free to everyone.
 
-* ✅ **100% Gratuito e Para Sempre:** Todas as funcionalidades essenciais sempre serão gratuitas.
-* 📢 **Zero Anúncios:** Uma experiência limpa e focada no que realmente importa: você.
-* 📖 **Totalmente Open-Source:** O código é seu para ver, auditar e melhorar.
-* 🤝 **Construído pela Comunidade:** Um projeto feito por desenvolvedores, designers, nutricionistas e entusiastas unidos por um propósito.
+* ✅ **100% Free, Forever:** All essential features will always be free.
+* 📢 **Zero Ads:** A clean experience focused on what truly matters: you.
+* 📖 **Fully Open Source:** The code is yours to see, audit, and improve.
+* 🤝 **Built by the Community:** A project made by developers, designers, nutritionists, and enthusiasts united by a purpose.
 
 ---
 
-## ✨ Funcionalidades Planejadas
+## ✨ Features Roadmap
 
-Estamos construindo um ecossistema completo para sua jornada de bem-estar.
+We are building a complete ecosystem for your wellness journey.
 
-| Categoria | Funcionalidades Principais |
+| Category | Key Features |
 |---|---|
-| 🥗 **Nutrição** | Contador de calorias, avaliação corporal, IA para dietas personalizadas, reconhecimento de prato por foto, integração com nutricionistas. |
-| 💪 **Treino** | IA para planos de treino personalizados, progressão automática, integração com personal trainers. |
-| 📊 **Progresso** | Gamificação (streaks, desafios), mural de conquistas, relatórios semanais de evolução. |
-| 🌐 **Comunidade** | Grupos de amigos, ranking e um espaço para compartilhar dicas e motivação. |
-| 🔗 **Integrações** | Sincronização com wearables (Apple Watch, Fitbit, etc.) e marketplace ético para profissionais. |
+| 🥗 **Nutrition** | Calorie counter, body assessment, AI for personalized diets, food recognition via photo, integration with nutritionists. |
+| 💪 **Training** | AI for personalized training plans, automatic progression, integration with personal trainers. |
+| 📊 **Progress** | Gamification (streaks, challenges), achievement wall, weekly progress reports. |
+| 🌐 **Community** | Groups of friends, rankings, and a space to share tips and motivation. |
+| 🔗 **Integrations**| Sync with wearables (Apple Watch, Fitbit, etc.) and an ethical marketplace for professionals. |
 
-➡️ **Veja nosso [Roadmap Público](https://github.com/orgs/Coffee-System/projects/1/views/1) para acompanhar o desenvolvimento de cada funcionalidade!**
+➡️ **Check out our [Public Roadmap](https://github.com/orgs/Coffee-System/projects/1/views/1) to follow the development of every feature!**
 
 ---
 
-## 🚀 Contribua e Faça Parte do Futuro da Saúde
+## 🚀 Contribute and Be Part of the Future of Health
 
-**Sua ajuda é a força por trás do NutriZen.** Seja você designer, nutricionista, tradutor, redator, ou apenas alguém com uma ótima ideia, existe um lugar para você aqui.
+**Your help is the driving force behind NutriZen.** Whether you are a designer, nutritionist, translator, writer, or just someone with a great idea, there is a place for you here.
 
-A melhor maneira de começar é entrando em nossa comunidade.
+The best way to start is by joining our community.
 
-1.  **💬 Entre no nosso Discord:** É o principal ponto de encontro. Apresente-se, participe das conversas e encontre áreas para colaborar.
-2.  **💡 Explore as Tarefas Abertas:** Dê uma olhada em nossas [Issues no GitHub](https://github.com/Coffee-System/nutrizen/issues). É lá que organizamos tudo o que precisa ser feito.
-3.  **📖 Leia nosso Guia Detalhado:** Para entender o passo a passo de como sugerir, criar e enviar suas contribuições, confira nosso [**Guia de Contribuição**](CONTRIBUTING.md).
-4.  **👨‍💻 Para configurar seu ambiente de desenvolvimento local, veja nosso [Guia de Setup Local](DEVELOPMENT.md).**
-  
+1.  **💬 Join our Discord:** It's our main hub. Introduce yourself, join the conversations, and find areas to collaborate.
+2.  **💡 Explore Open Tasks:** Take a look at our [Issues on GitHub](https://github.com/Coffee-System/nutrizen/issues). That's where we organize everything that needs to be done.
+3.  **📖 Read our Detailed Guide:** To understand the step-by-step process of how to suggest, create, and submit your contributions, check out our [**Contribution Guide**](CONTRIBUTING.md).
+4.  **👨‍💻 To set up your local development environment, see our [Local Setup Guide](DEVELOPMENT.md).**
 <br>
 
-Procurando um bom ponto de partida? Veja as [**tarefas para iniciantes (`good first issue`)**](https://github.com/Coffee-System/nutrizen/labels/good%20first%20issue).
+Looking for a good starting point? Check out the [**tasks for beginners (`good first issue`)**](https://github.com/Coffee-System/nutrizen/labels/good%20first%20issue).
 
 ---
 
+## 🛠️ Tech Stack
 
-## 🛠️ Stack Tecnológico
-
-Estamos usando tecnologias modernas para construir uma plataforma rápida, robusta e escalável.
+We are using modern technologies to build a fast, robust, and scalable platform.
 
 * **Frontend (Web):** Next.js + TypeScript + Tailwind CSS
 * **Frontend (Mobile):** React Native + Expo
-* **Backend:** Supabase (PostgreSQL, Auth, Storage) com migração planejada para Node.js (NestJS)
-* **Inteligência Artificial:** APIs da OpenAI e modelos da comunidade HuggingFace
-* **Hospedagem:** Vercel & Supabase
+* **Backend:** Supabase (PostgreSQL, Auth, Storage) with a planned migration to Node.js (NestJS)
+* **Artificial Intelligence:** OpenAI APIs and models from the HuggingFace community
+* **Hosting:** Vercel & Supabase
 
-➡️ **Para uma visão mais aprofundada da nossa arquitetura e padrões de código, confira nossa [Documentação Técnica](/docs).**
+➡️ **For a deeper look into our architecture and coding standards, check out our [Technical Documentation](/docs).**
 
 ---
 
-## 🏛️ Licença
+## 🏛️ License
 
-Este projeto é distribuído sob a Licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+This project is distributed under the MIT License. See the `LICENSE` file for more details.
 
-A marca "NutriZen" e seu logo são marcas registradas da Coffee System.
+**For more information, please consult:**
+
+[Privacy Policy](legal/PRIVACY_POLICY.md)
+<br>
+[Terms of Service](legal/TERMS_OF_SERVICE.md)
+
+The "NutriZen" brand and its logo are registered trademarks of Coffee System.
 
 ---
 
 <p align="center">
-  <strong>Uma iniciativa da Coffee System nutrida pela comunidade open-source..</strong>
+  <strong>A Coffee System initiative nurtured by the open-source community.</strong>
 </p>

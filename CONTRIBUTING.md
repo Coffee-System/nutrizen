@@ -1,99 +1,96 @@
-# Como Contribuir com o NutriZen 😺
+# How to Contribute to NutriZen 😺
 
-Olá! Ficamos extremamente felizes com o seu interesse em contribuir. O NutriZen é um projeto construído **pela comunidade e para a comunidade**. Toda ajuda é bem-vinda e essencial para criarmos a melhor plataforma de saúde do mundo.
+Hello! We are extremely happy about your interest in contributing. NutriZen is a project built **by the community, for the community**. All help is welcome and essential for us to build the world's best open-source health platform together.
 
-Este guia foi feito para todos, **especialmente para quem não sabe programar**. Queremos que designers, nutricionistas, redatores e entusiastas se sintam em casa.
+This guide is made for everyone, **especially for those who don't code**. We want designers, nutritionists, writers, and enthusiasts to feel at home here.
 
-## Código de Conduta
+## Code of Conduct
 
-Antes de tudo, esperamos que todos sigam nosso [Código de Conduta](CODE_OF_CONDUCT.md). Nosso objetivo é manter um ambiente amigável, respeitoso e onde todos se sintam seguros para colaborar.
-
----
-
-## Nossos Canais de Contribuição
-
-Não se assuste com o GitHub! Para a maioria das contribuições, usaremos apenas duas ferramentas simples:
-
-1.  **GitHub Issues:** Pense nisso como nosso quadro de ideias e tarefas. É aqui que sugerimos novas funcionalidades, reportamos bugs e discutimos propostas de design. É o lugar perfeito para começar.
-2.  **Discord:** É o nosso café virtual, onde a comunidade conversa em tempo real, tira dúvidas e colabora de forma mais informal. **[Entre no nosso Discord aqui!](https://discord.gg/VpmkEKMa7D)**.
+First and foremost, we expect all community members to follow our [Code of Conduct](CODE_OF_CONDUCT.md). Our goal is to maintain a friendly, respectful, and inclusive environment where everyone feels safe to collaborate.
 
 ---
 
-## Trilhas de Contribuição: Encontre a Sua!
+## Our Contribution Channels
 
-Preparamos guias específicos para cada tipo de talento.
+Don't be scared of GitHub! For most contributions, we'll only use two simple tools:
 
-### 🎨 Para Designers (UI/UX) e Artistas
+1.  **GitHub Issues:** Think of this as our ideas and tasks board. This is where we suggest new features, report bugs, and discuss design proposals. It's the perfect place to start.
+2.  **Discord:** This is our virtual coffee shop, where the community talks in real-time, asks questions, and collaborates more informally. **[Join our Discord here!](https://discord.gg/VpmkEKMa7D)**.
 
-Sua criatividade é fundamental para tornar o NutriZen amigável e bonito.
+---
 
-* **O que você pode fazer?**
-    * Criar mockups e protótipos para novas telas.
-    * Sugerir melhorias na experiência do usuário (UX).
-    * Desenhar ícones, ilustrações ou até mesmo o nosso mascote.
-    * Dar feedback sobre o design atual.
-* **Como contribuir?**
-    1.  Procure por [Issues com a etiqueta `design-needed`](https://github.com/Coffee-System/nutrizen/labels/design-needed) ou [crie uma nova Issue](https://github.com/Coffee-System/nutrizen/issues/new?assignees=&labels=design%2Cenhancement&template=feature_request.md&title=) para sua proposta.
-    2.  Use ferramentas como Figma, Penpot, ou qualquer outra de sua preferência.
-    3.  Na Issue, descreva sua ideia e anexe imagens (PNG, JPG) ou o link do seu projeto de design (ex: link público do Figma). O debate acontecerá ali!
+## Contribution Paths: Find Yours!
 
-### ✍️ Para Redatores, Tradutores e Criadores de Conteúdo
+We have prepared specific guides for every type of talent.
 
-Sua habilidade com palavras pode tornar o app mais claro e motivador.
+### 🎨 For Designers (UI/UX) and Artists
 
-* **O que você pode fazer?**
-    * Melhorar os textos dentro do aplicativo (UX Writing).
-    * Traduzir o NutriZen para outros idiomas.
-    * Escrever posts para o nosso blog ou guias de ajuda.
-* **Como contribuir?**
-    * **Para pequenas correções (ex: um erro de digitação):** Você pode usar a interface do próprio GitHub para editar um arquivo. [Veja este guia rápido de como fazer isso](https://docs.github.com/pt/repositories/working-with-files/managing-files/editing-files).
-    * **Para contribuições maiores:** [Crie uma Issue](https://github.com/Coffee-System/nutrizen/issues/new) para discutir sua ideia. Você pode escrever o conteúdo em um Google Docs e compartilhar o link na Issue para recebermos feedback.
+Your creativity is fundamental to making NutriZen friendly and beautiful.
 
-### 👩‍⚕️ Para Especialistas (Nutricionistas, Personal Trainers)
+* **What you can do:**
+    * Create mockups and prototypes for new screens.
+    * Suggest improvements to the user experience (UX).
+    * Design icons, illustrations, or even our mascot.
+    * Give feedback on the current design.
+* **How to contribute:**
+    1.  Look for [Issues with the `design-needed` label](https://github.com/Coffee-System/nutrizen/labels/design-needed) or [create a new Issue](https://github.com/Coffee-System/nutrizen/issues/new?assignees=&labels=design%2Cenhancement&template=feature_request.md&title=) for your proposal.
+    2.  Use tools like Figma, Penpot, or any other of your preference.
+    3.  In the Issue, describe your idea and attach images (PNG, JPG) or the link to your design project (e.g., a public Figma link). The discussion will happen there!
 
-Seu conhecimento é o que dará credibilidade e eficácia ao NutriZen.
+### ✍️ For Writers, Translators, and Content Creators
 
-* **O que você pode fazer?**
-    * Validar as fórmulas de cálculo de calorias e macros.
-    * Dar feedback sobre os planos de dieta e treino gerados pela IA.
-    * Sugerir novas funcionalidades baseadas na sua experiência profissional.
-* **Como contribuir?**
-    * Participe das discussões nas [Issues](https://github.com/Coffee-System/nutrizen/issues), especialmente as que tiverem a etiqueta `expert-feedback-needed`.
-    * Traga suas ideias e insights para o nosso canal `#especialistas` no Discord. Sua opinião é ouro para nós.
+Your skill with words can make the app clearer and more motivating.
 
-### 🧑‍💻 Para Desenvolvedores: Contribuindo com Código
+* **What you can do:**
+    * Improve the texts within the application (UX Writing).
+    * Translate NutriZen into other languages.
+    * Write blog posts or help guides for the project.
+* **How to contribute:**
+    * **For small fixes (e.g., a typo):** You can use the GitHub interface itself to edit a file. [See this quick guide on how to do it](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files).
+    * **For larger contributions:** [Create an Issue](https://github.com/Coffee-System/nutrizen/issues/new) to discuss your idea. You can write the content in a Google Doc and share the link in the Issue to receive feedback.
 
-Se você quer colocar a mão na massa, o processo é o seguinte. **Antes de começar, recomendamos fortemente a leitura dos nossos guias de desenvolvimento para entender nossos padrões:**
+### 👩‍⚕️ For Experts (Nutritionists, Personal Trainers)
 
-* **📖 [Guia de Desenvolvimento Frontend](/docs/FRONTEND_GUIDE.md)**
-* **⚙️ [Guia de Desenvolvimento Backend](/docs/BACKEND_GUIDE.md)**
+Your knowledge is what will give NutriZen credibility and effectiveness.
 
-1.  **Faça um Fork do Repositório:** ...
-...
+* **What you can do:**
+    * Validate the formulas for calorie and macro calculations.
+    * Give feedback on the diet and workout plans generated by the AI.
+    * Suggest new features based on your professional experience.
+* **How to contribute:**
+    * Participate in discussions in the [Issues](https://github.com/Coffee-System/nutrizen/issues), especially those with the `expert-feedback-needed` label.
+    * Bring your ideas and insights to our `#experts` channel on Discord. Your opinion is gold to us.
 
-1.  **Faça um Fork do Repositório:** Crie uma cópia do projeto na sua conta.
-2.  **Clone o seu Fork:** Clone a *sua* cópia do projeto para a sua máquina. Lembre-se de substituir `<SEU-USUARIO>` pelo seu nome de usuário do GitHub.
+### 🧑‍💻 For Developers: Contributing with Code
+
+If you want to get your hands dirty with code, here's the process. **Before you start, we strongly recommend reading our development guides to understand our standards:**
+
+* **📖 [Frontend Development Guide](/docs/FRONTEND_GUIDE.md)**
+* **⚙️ [Backend Development Guide](/docs/BACKEND_GUIDE.md)**
+
+1.  **Fork the Repository:** Create a copy of the project in your own account.
+2.  **Clone Your Fork:** Clone *your* copy of the project to your local machine. Remember to replace `<YOUR-USERNAME>` with your GitHub username.
     ```bash
-    git clone [https://github.com/](https://github.com/)<SEU-USUARIO>/nutrizen.git
+    git clone [https://github.com/](https://github.com/)<YOUR-USERNAME>/nutrizen.git
     ```
-3.  **Crie uma Nova Branch:** Navegue até o diretório e crie uma branch para sua alteração.
+3.  **Create a New Branch:** Navigate to the project directory and create a specific branch for your change.
     ```bash
     cd nutrizen
-    git checkout -b feature/minha-nova-funcionalidade
+    git checkout -b feature/my-new-feature
     ```
-4.  **Instale as Dependências e Codifique:**
+4.  **Install Dependencies and Code:**
     ```bash
-    # Use o comando específico do projeto, ex: pnpm install
+    # Use the project's specific command, e.g., pnpm install
     npm install 
-    # Agora, faça a mágica acontecer!
+    # Now, work your magic!
     ```
-5.  **Faça o Commit e Envie:** Use o padrão de [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
+5.  **Commit and Push:** Use the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) standard for your messages.
     ```bash
-    git commit -m "feat: Adiciona funcionalidade de login com Google"
-    git push origin feature/minha-nova-funcionalidade
+    git commit -m "feat: Add Google login functionality"
+    git push origin feature/my-new-feature
     ```
-6.  **Abra um Pull Request (PR):** Volte ao seu fork no GitHub e abra um PR para o repositório original, descrevendo bem o que você fez.
+6.  **Open a Pull Request (PR):** Go back to your fork on GitHub and open a PR to the original NutriZen repository, describing what you've done.
 
 ---
 
-Obrigado por dedicar seu tempo e talento ao NutriZen. Juntos, estamos construindo algo incrível!
+Thank you for dedicating your time and talent to NutriZen. Together, we are building something incredible!
