@@ -1,36 +1,36 @@
-# Padrões de Código do NutriZen 🧮
+# NutriZen Coding Standards 🧮
 
-Para manter nosso código limpo, legível e fácil de manter, seguimos um conjunto de padrões e convenções. Pedimos que toda contribuição de código adira a estas diretrizes.
+To keep our code clean, readable, and easy to maintain, we follow a set of standards and conventions. We ask that all code contributions adhere to these guidelines.
 
-## Ferramentas (A Fonte da Verdade)
+## Tooling (The Source of Truth)
 
-Nós usamos **ESLint** para análise estática de código e **Prettier** para formatação automática. As configurações desses dois projetos são a fonte da verdade para o nosso estilo de código.
+We use **ESLint** for static code analysis and **Prettier** for automatic formatting. The configurations for these two projects are the source of truth for our code style.
 
-**Recomendamos fortemente que você configure seu editor de código para usar o Prettier e o ESLint do projeto ao salvar um arquivo.**
+**We strongly recommend that you configure your code editor to use the project's Prettier and ESLint settings on file save.**
 
-## Convenções de Nomenclatura
+## Naming Conventions
 
-* **Componentes (React):** Use `PascalCase`. Ex: `UserProfileCard.tsx`.
-* **Arquivos e Pastas:** Use `kebab-case` para nomes de arquivos e pastas, exceto para componentes. Ex: `user-profile`.
-* **Variáveis e Funções:** Use `camelCase`. Ex: `const userProfile = getUserProfile();`.
-* **Tipos e Interfaces (TypeScript):** Use `PascalCase`. Ex: `interface UserProfile { ... }`.
+* **Components (React):** Use `PascalCase`. Ex: `UserProfileCard.tsx`.
+* **Files and Folders:** Use `kebab-case` for file and folder names, except for components. Ex: `user-profile`.
+* **Variables and Functions:** Use `camelCase`. Ex: `const userProfile = getUserProfile();`.
+* **Types and Interfaces (TypeScript):** Use `PascalCase`. Ex: `interface UserProfile { ... }`.
 
-## Estilo de Commits
+## Commit Style
 
-Nós seguimos o padrão [**Conventional Commits**](https://www.conventionalcommits.org/en/v1.0.0/). Isso nos ajuda a manter um histórico de commits legível e a automatizar a geração de changelogs.
+We follow the [**Conventional Commits**](https://www.conventionalcommits.org/en/v1.0.0/) standard. This helps us maintain a readable commit history and automate the generation of changelogs.
 
-**Formato:** `<tipo>(<escopo opcional>): <descrição>`
+**Format:** `<type>(<optional scope>): <description>`
 
-* **Exemplos:**
-    * `feat: adiciona login com Google`
-    * `fix(auth): corrige bug de redirecionamento após logout`
-    * `docs: atualiza guia de setup local`
+* **Examples:**
+    * `feat: add Google login`
+    * `fix(auth): correct redirect bug after logout`
+    * `docs: update local setup guide`
 
-## Diretrizes Gerais de Código
+## General Code Guidelines
 
 * **TypeScript:**
-    * Use tipos explícitos para props de componentes, parâmetros e retornos de funções.
-    * Prefira interfaces (`interface`) para definir a forma de objetos e tipos (`type`) para uniões e tipos mais complexos.
+    * Use explicit types for component props, parameters, and function returns.
+    * Prefer interfaces (`interface`) to define the shape of objects and types (`type`) for unions and more complex types.
 * **React:**
-    * Prefira componentes funcionais com Hooks.
-    * Mantenha os componentes pequenos e focados em uma única responsabilidade.
+    * Prefer functional components with Hooks.
+    * Keep components small and focused on a single responsibility.
