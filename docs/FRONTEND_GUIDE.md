@@ -1,41 +1,41 @@
-# Guia de Desenvolvimento Frontend do NutriZen 💻
+# NutriZen Frontend Development Guide 💻
 
-Este guia contém exemplos e padrões para o desenvolvimento de interfaces e componentes no NutriZen. O objetivo é manter nosso código consistente, legível e de alta qualidade.
+This guide contains examples and standards for developing interfaces and components in NutriZen. The goal is to keep our code consistent, readable, and high-quality.
 
-## Estrutura de Pastas
+## Folder Structure
 
-* **Aplicações:** Ficam em `/apps`. A nossa aplicação web principal está em `/apps/web`.
-* **Componentes de UI Compartilhados:** Componentes reutilizáveis (Botões, Inputs, Cards) devem ser criados em `/packages/ui`.
+* **Applications:** Are located in `/apps`. Our main web application is in `/apps/web`.
+* **Shared UI Components:** Reusable components (Buttons, Inputs, Cards) should be created in `/packages/ui`.
 
-## Padrão de Componente de UI
+## UI Component Standard
 
-Componentes de UI devem ser genéricos, bem tipados com TypeScript e estilizados com Tailwind CSS.
+UI components should be generic, well-typed with TypeScript, and styled with Tailwind CSS.
 
-**Exemplo: `/packages/ui/src/Button.tsx`**
+**Example: `/packages/ui/src/Button.tsx`**
 ```tsx
 // /packages/ui/src/Button.tsx
 
 import React from 'react';
 
-// 1. As props são tipadas com TypeScript para garantir segurança e autocompletar.
-// Usamos `extends` para herdar todos os atributos de um botão HTML padrão.
+// 1. Props are typed with TypeScript to ensure safety and autocomplete.
+// We use `extends` to inherit all standard HTML button attributes.
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  variant?: 'primary' | 'secondary'; // Variantes de estilo
+  variant?: 'primary' | 'secondary'; // Style variants
 }
 
-// 2. O componente é exportado como uma função nomeada.
+// 2. The component is exported as a named function.
 export function Button({ children, variant = 'primary', ...props }: ButtonProps): JSX.Element {
-  // 3. Classes de estilo base são definidas para manter a consistência.
+  // 3. Base style classes are defined to maintain consistency.
   const baseClasses = 'px-4 py-2 font-bold rounded-lg shadow-md transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-opacity-50';
 
-  // 4. Classes específicas de variantes são gerenciadas com um objeto.
+  // 4. Specific variant classes are managed with an object.
   const variantClasses = {
     primary: 'bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500',
     secondary: 'bg-gray-200 text-gray-800 hover:bg-gray-300 focus:ring-gray-400',
   };
 
-  // 5. As classes são combinadas e aplicadas ao elemento.
+  // 5. The classes are combined and applied to the element.
   return (
     <button className={`${baseClasses} ${variantClasses[variant]}`} {...props}>
       {children}
@@ -44,40 +44,40 @@ export function Button({ children, variant = 'primary', ...props }: ButtonProps)
 }
 ```
 
-## Padrão de Página
+## Page Standard
 
-As páginas são Server Components por padrão no Next.js App Router. Elas devem ser usadas para buscar dados e compor a UI com os componentes de `/packages/ui`.
+Pages are Server Components by default in the Next.js App Router. They should be used to fetch data and compose the UI with components from `/packages/ui`.
 
-**Exemplo: `/apps/web/app/page.tsx`**
+**Example: `/apps/web/app/page.tsx`**
 ```tsx
 // /apps/web/app/page.tsx
 
-// 1. Importe componentes compartilhados do nosso pacote de UI.
+// 1. Import shared components from our UI package.
 import { Button } from '@nutrizen/ui'; 
 
-// 2. A página é um Server Component assíncrono por padrão.
+// 2. The page is an async Server Component by default.
 export default function HomePage() {
-  // A busca de dados (data fetching) seria feita aqui em páginas mais complexas.
+  // Data fetching would be done here in more complex pages.
 
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-8 bg-gray-50">
       <div className="text-center">
         <h1 className="text-4xl font-bold text-gray-800">
-          Bem-vindo ao NutriZen 🌱
+          Welcome to NutriZen 🌱
         </h1>
         <p className="mt-4 text-lg text-gray-600">
-          Sua jornada de saúde, construída pela comunidade.
+          Your health journey, built by the community.
         </p>
       </div>
 
       <div className="mt-8 flex gap-4">
-        {/* 3. Use os componentes com suas variantes e props. */}
-        {/* Adicione `use client` no topo do arquivo se precisar de interatividade (onClick, useState, etc) */}
+        {/* 3. Use the components with their variants and props. */}
+        {/* Add `use client` at the top of the file if you need interactivity (onClick, useState, etc.) */}
         <Button variant="primary">
-          Junte-se à Comunidade
+          Join the Community
         </Button>
         <Button variant="secondary">
-          Ver no GitHub
+          View on GitHub
         </Button>
       </div>
     </main>
