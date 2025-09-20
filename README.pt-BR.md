@@ -2,7 +2,7 @@
 <p align="right"><a href="README.md">English</a> | <a href="README.pt-BR.md"><strong>Português</strong></a></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Coffee-System/nutrizen/main/docs/images/logo_nutrizen.jpg" alt="Logo da NutriZen" width="150"/>
+  <img src="https://raw.githubusercontent.com/Coffee-System/nutrizen/main/docs/images/logo_3.pne" alt="Logo da NutriZen" width="150"/>
 </p>
 
 <h3 align="center">Sua jornada de saúde, construída pela comunidade.</h3>
@@ -28,8 +28,8 @@
 ## 📸 Telas / Demonstração (Em desenvolvimento)
 
 <p align="center">
-  <img src="docs/images/demo1.png" width="250" alt="Tela de demonstração do NutriZen"/>
-  <img src="docs/images/demo2.png" width="250" alt="Tela de demonstração do NutriZen"/>
+  <img src="docs/images/demo_1.png" width="250" alt="Tela de demonstração do NutriZen"/>
+  <img src="docs/images/demo_2.png" width="250" alt="Tela de demonstração do NutriZen"/>
 </p>
 
 *(Apenas mockups — a interface real será lançada em breve!)*
