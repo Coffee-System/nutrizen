@@ -28,8 +28,8 @@
 ## 📸 Screenshots / Demo (Work in Progress)
 
 <p align="center">
-  <img src="docs/images/demo1.png" width="250" alt="NutriZen Demo Screenshot"/>
-  <img src="docs/images/demo2.png" width="250" alt="NutriZen Demo Screenshot"/>
+  <img src="docs/images/demo_1.png" width="250" alt="NutriZen Demo Screenshot"/>
+  <img src="docs/images/demo_2.png" width="250" alt="NutriZen Demo Screenshot"/>
 </p>
 
 *(Mockups only — real UI coming soon!)*
