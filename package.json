@@ -8,8 +8,8 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "pnpm --filter web build",
-    "dev": "pnpm --filter web dev",
+    "build": "npm run build --workspace=apps/web",
+    "dev": "npm run dev --workspace=apps/web",
     "lint": "eslint \"**/*.{ts,tsx,js,jsx}\"",
     "lint:fix": "eslint \"**/*.{ts,tsx,js,jsx}\" --fix",
     "lint:check": "eslint \"**/*.{ts,tsx,js,jsx}\" --max-warnings 0",

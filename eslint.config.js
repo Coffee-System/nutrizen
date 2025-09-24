@@ -26,11 +26,9 @@ module.exports = [
   {
     files: ['**/*.{ts,tsx,js,jsx}'],
     rules: {
-
-      'no-console': 'warn', 
-      'no-debugger': 'error', 
-      'prefer-const': 'error', 
-      
+      'no-console': 'warn',
+      'no-debugger': 'error',
+      'prefer-const': 'error',
 
       'object-shorthand': 'error',
       'prefer-template': 'error',
