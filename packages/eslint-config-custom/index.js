@@ -1,9 +1,6 @@
-const customConfig = require('@nutrizen/eslint-config-custom');
+// eslint.config.js
 const { FlatCompat } = require('@eslint/eslintrc');
-
 const prettierConfig = require('eslint-config-prettier');
-
-module.exports = customConfig;
 
 const compat = new FlatCompat({
   baseDirectory: __dirname,
