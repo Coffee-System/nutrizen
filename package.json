@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "build": "npm run build --workspace=apps/web",
-  "build:packages": "npm run build -w @nutrizen/types -w @nutrizen/constants -w @nutrizen/ui -w @nutrizen/components",
+    "build:packages": "npm run build -w @nutrizen/types -w @nutrizen/constants -w @nutrizen/ui -w @nutrizen/components",
     "dev": "npm run dev --workspace=apps/web",
     "dev:packages": "npm run dev --workspaces --include=packages/*",
     "lint": "eslint \"**/*.{ts,tsx,js,jsx}\"",
