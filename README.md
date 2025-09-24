@@ -2,7 +2,7 @@
 <p align="right"><a href="README.md"><strong>English</strong></a> | <a href="README.pt-BR.md">Português</a></p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Coffee-System/nutrizen/main/docs/images/logo_3.png" alt="NutriZen Logo" width="150"/>
+  <img src="https://raw.githubusercontent.com/Coffee-System/nutrizen/main/design/images/logo_3.png" alt="NutriZen Logo" width="150"/>
 </p>
 
 <h3 align="center">Your health journey, built by the community.</h3>
@@ -28,8 +28,8 @@
 ## 📸 Screenshots / Demo (Work in Progress)
 
 <p align="center">
-  <img src="docs/images/demo_1.png" width="250" alt="NutriZen Demo Screenshot"/>
-  <img src="docs/images/demo_2.png" width="250" alt="NutriZen Demo Screenshot"/>
+  <img src="design/images/demo_1.png" width="250" alt="NutriZen Demo Screenshot"/>
+  <img src="design/images/demo_2.png" width="250" alt="NutriZen Demo Screenshot"/>
 </p>
 
 *(Mockups only — real UI coming soon!)*
