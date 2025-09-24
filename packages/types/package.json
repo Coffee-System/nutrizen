@@ -1,0 +1,25 @@
+{
+  "name": "@nutrizen/types",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format cjs,esm --clean",
+    "dev": "tsup src/index.ts --dts --format cjs,esm --watch"
+  },
+  "devDependencies": {
+    "@nutrizen/tsconfig": "*",
+    "typescript": "^5.6.3"
+  }
+}

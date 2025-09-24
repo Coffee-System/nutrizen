@@ -7,28 +7,33 @@ on:
     branches: [ main ]
 
 jobs:
-  build-and-lint:
+  validate-build:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [18.x]
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Run Lint
-      run: npm run lint
+      - name: Validate (Lint + Type + Format)
+        run: npm run validate
 
-    - name: Run Build
-      run: npm run build
+      - name: Build packages
+        run: npm run build:packages || echo "No packages build step configured"
+
+      - name: Build web app
+        run: npm run build
+
+      - name: Upload Next build artifact
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: next-build
+          path: apps/web/.next

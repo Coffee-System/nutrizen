@@ -1,0 +1,15 @@
+{
+  "extends": "@nutrizen/tsconfig/base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@nutrizen/constants": ["../constants/src/index.ts"],
+      "@nutrizen/types": ["../types/src/index.ts"],
+      "@nutrizen/ui": ["../ui/src/index.ts"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

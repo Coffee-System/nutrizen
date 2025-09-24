@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "main": "index.js",
+  "scripts": {
+    "build": "echo 'No build needed for eslint config'"
+  },
   "dependencies": {
     "@eslint/eslintrc": "^3.3.1",
     "eslint-config-next": "^15.5.4",

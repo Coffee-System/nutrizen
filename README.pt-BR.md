@@ -1,5 +1,8 @@
 # NutriZen 😺
-<p align="right"><a href="README.md">English</a> | <a href="README.pt-BR.md"><strong>Português</strong></a></p>
+
+<p al    <a href="https://discord.gg/fHB8xHYBvX">
+        <img src="https://img.shields.io/discord/1418265631987466254?color=7289DA&label=Discord&logo=discord&logoColor=white" alt="Chat on Discord">
+    </a>="right"><a href="README.md">English</a> | <a href="README.pt-BR.md"><strong>Português</strong></a></p>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Coffee-System/nutrizen/main/design/images/logo_3.png" alt="Logo da NutriZen" width="150"/>
@@ -32,7 +35,7 @@
   <img src="design/images/demo_2.png" width="250" alt="Tela de demonstração do NutriZen"/>
 </p>
 
-*(Apenas mockups — a interface real será lançada em breve!)*
+_(Apenas mockups — a interface real será lançada em breve!)_
 
 ---
 
@@ -41,7 +44,7 @@
 A NutriZen é feita de pessoas. Siga-nos, tire dúvidas e participe da conversa em nossos canais sociais.
 
 <p align="center">
-  <a href="https://discord.gg/VpmkEKMa7D">
+  <a href="https://discord.gg/fHB8xHYBvX">
     <img src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="Discord">
   </a>
   <a href="https://www.instagram.com/nutrizenappofficial/">
@@ -65,10 +68,10 @@ O mercado de aplicativos de saúde está quebrado. Somos bombardeados com anúnc
 
 Nossa missão é criar a ferramenta de saúde mais completa, confiável e transparente do mundo, e entregá-la gratuitamente para todos.
 
-* ✅ **100% Gratuito, Para Sempre:** Todos os recursos essenciais sempre serão gratuitos.
-* 📢 **Zero Anúncios:** Uma experiência limpa e focada no que realmente importa: você.
-* 📖 **Totalmente Open Source:** O código é seu para ver, auditar e aprimorar.
-* 🤝 **Construído pela Comunidade:** Desenvolvedores, designers, nutricionistas e entusiastas unidos por um propósito.
+- ✅ **100% Gratuito, Para Sempre:** Todos os recursos essenciais sempre serão gratuitos.
+- 📢 **Zero Anúncios:** Uma experiência limpa e focada no que realmente importa: você.
+- 📖 **Totalmente Open Source:** O código é seu para ver, auditar e aprimorar.
+- 🤝 **Construído pela Comunidade:** Desenvolvedores, designers, nutricionistas e entusiastas unidos por um propósito.
 
 ---
 
@@ -76,13 +79,13 @@ Nossa missão é criar a ferramenta de saúde mais completa, confiável e transp
 
 Estamos construindo um ecossistema completo para a sua jornada de bem-estar.
 
-| Categoria | Principais Funcionalidades |
-|---|---|
-| 🥗 **Nutrição** | Contador de calorias, avaliação corporal, IA para dietas personalizadas, reconhecimento de alimentos por foto, integração com nutricionistas. |
-| 💪 **Treino** | IA para planos de treino personalizados, progressão automática, integração com personal trainers. |
-| 📊 **Progresso** | Gamificação (sequências, desafios), mural de conquistas, relatórios semanais de progresso. |
-| 🌐 **Comunidade** | Grupos de amigos, rankings e um espaço para compartilhar dicas e motivação. |
-| 🔗 **Integrações**| Sincronização com wearables (Apple Watch, Fitbit, etc.) e marketplace ético para profissionais. |
+| Categoria          | Principais Funcionalidades                                                                                                                    |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| 🥗 **Nutrição**    | Contador de calorias, avaliação corporal, IA para dietas personalizadas, reconhecimento de alimentos por foto, integração com nutricionistas. |
+| 💪 **Treino**      | IA para planos de treino personalizados, progressão automática, integração com personal trainers.                                             |
+| 📊 **Progresso**   | Gamificação (sequências, desafios), mural de conquistas, relatórios semanais de progresso.                                                    |
+| 🌐 **Comunidade**  | Grupos de amigos, rankings e um espaço para compartilhar dicas e motivação.                                                                   |
+| 🔗 **Integrações** | Sincronização com wearables (Apple Watch, Fitbit, etc.) e marketplace ético para profissionais.                                               |
 
 ➡️ **Confira nosso [Roadmap Público](https://github.com/orgs/Coffee-System/projects/1/views/1) para acompanhar o desenvolvimento de cada funcionalidade!**
 
@@ -107,11 +110,11 @@ Procurando um ponto de partida? Veja as [**good first issues**](https://github.c
 
 Estamos usando tecnologias modernas para construir uma plataforma rápida, robusta e escalável.
 
-* **Frontend (Web):** Next.js + TypeScript + Tailwind CSS
-* **Frontend (Mobile):** React Native + Expo
-* **Backend:** Supabase (PostgreSQL, Auth, Storage) → migração planejada para NestJS
-* **Inteligência Artificial:** APIs da OpenAI + modelos HuggingFace
-* **Hospedagem:** Vercel & Supabase
+- **Frontend (Web):** Next.js + TypeScript + Tailwind CSS
+- **Frontend (Mobile):** React Native + Expo
+- **Backend:** Supabase (PostgreSQL, Auth, Storage) → migração planejada para NestJS
+- **Inteligência Artificial:** APIs da OpenAI + modelos HuggingFace
+- **Hospedagem:** Vercel & Supabase
 
 ➡️ Confira nossa [Documentação Técnica](/docs) para detalhes sobre a arquitetura e padrões.
 
@@ -121,6 +124,7 @@ Estamos usando tecnologias modernas para construir uma plataforma rápida, robus
 
 A NutriZen tem como objetivo ser **global**.
 Atualmente, damos suporte a:
+
 - 🇺🇸 Inglês
 - 🇧🇷 Português (Brasil)
 
@@ -135,6 +139,7 @@ Quer ajudar a traduzir? Junte-se ao esforço nas [Issues do GitHub](https://gith
 Este projeto é distribuído sob a Licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
 📄 Também disponível:
+
 - [Política de Privacidade](legal/PRIVACY_POLICY.md)
 - [Termos de Serviço](legal/TERMS_OF_SERVICE.md)
 
