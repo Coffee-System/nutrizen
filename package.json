@@ -10,14 +10,20 @@
   "scripts": {
     "build": "pnpm --filter web build",
     "dev": "pnpm --filter web dev",
-    "lint": "eslint \"**/*.{ts,tsx}\"",
-    "format": "prettier --write \"**/*.{ts,tsx,md,json}\""
+    "lint": "eslint \"**/*.{ts,tsx,js,jsx}\"",
+    "lint:fix": "eslint \"**/*.{ts,tsx,js,jsx}\" --fix",
+    "lint:check": "eslint \"**/*.{ts,tsx,js,jsx}\" --max-warnings 0",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json,js,jsx}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,md,json,js,jsx}\"",
+    "check": "npm run lint:check && npm run format:check"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
     "eslint": "^9.36.0",
+    "eslint-config-next": "^15.5.4",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "prettier": "^3.6.2"
