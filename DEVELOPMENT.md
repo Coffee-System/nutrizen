@@ -6,11 +6,7 @@ Hello, contributor! We're thrilled to have you here. This guide will help you se
 
 Before you begin, ensure you have the following tools installed:
 
-* **Node.js:** Version 18.x or higher. [Download here](https://nodejs.org/)
-* **pnpm:** We use `pnpm` as our package manager. After installing Node.js, install it globally with:
-    ```bash
-    npm install -g pnpm
-    ```
+* **Node.js:** Version 18.x or higher. This includes **npm** (version 7+). [Download here](https://nodejs.org/)
 * **Git:** Essential for version control. [Download here](https://git-scm.com/)
 
 ## 1. Project Setup
@@ -30,10 +26,10 @@ cd nutrizen
 
 ### b. Install Dependencies
 
-Now, install all project dependencies using `pnpm`:
+Now, install all project dependencies using `npm`:
 
 ```bash
-pnpm install
+npm install
 ```
 
 ## 2. Environment Variables Setup
@@ -75,7 +71,7 @@ From the root of the monorepo, execute the following command:
 
 ```bash
 # To run the web application (Next.js)
-pnpm --filter web dev
+npm run dev --workspace=web
 ```
 
 Open your browser and navigate to [http://localhost:3000](http://localhost:3000). You should see the NutriZen application running!
