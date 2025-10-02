@@ -16,6 +16,14 @@
     "dist"
   ],
   "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Coffee-System/nutrizen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Coffee-System/nutrizen/issues"
+  },
+  "homepage": "https://nutrizen.dev",
   "scripts": {
     "build": "tsup src/index.ts --dts --format cjs,esm --clean",
     "dev": "tsup src/index.ts --dts --format cjs,esm --watch"

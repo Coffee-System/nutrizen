@@ -60,6 +60,12 @@ button {
   cursor: pointer;
 }
 
+/* Accessible focus ring */
+*:focus-visible {
+  outline: 2px solid var(--color-p1);
+  outline-offset: 2px;
+}
+
 /* Custom Gradients */
 .g1 {
   background: linear-gradient(#2ef2ff, #b966f7);

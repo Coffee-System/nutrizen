@@ -1,1 +1,3 @@
-export function FeaturesSection() { return null; }
+export function FeaturesSection() {
+  return null;
+}

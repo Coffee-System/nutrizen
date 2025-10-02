@@ -1,5 +1,5 @@
 {
-  "name": "@nutrizen/components",
+  "name": "@nutrizen/tokens",
   "version": "1.0.0",
   "private": true,
   "main": "dist/index.cjs",
@@ -10,6 +10,10 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.cjs"
+    },
+    "./tailwind-preset": {
+      "import": "./dist/tailwind-preset.mjs",
+      "require": "./dist/tailwind-preset.cjs"
     }
   },
   "files": [
@@ -20,25 +24,8 @@
     "build": "tsup src/index.ts --dts --format cjs,esm --clean",
     "dev": "tsup src/index.ts --dts --format cjs,esm --watch"
   },
-  "dependencies": {
-    "@nutrizen/constants": "*",
-    "@nutrizen/types": "*",
-    "@nutrizen/ui": "*",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Coffee-System/nutrizen.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Coffee-System/nutrizen/issues"
-  },
-  "homepage": "https://nutrizen.dev",
   "devDependencies": {
     "@nutrizen/tsconfig": "*",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
     "typescript": "^5.6.3"
   }
 }

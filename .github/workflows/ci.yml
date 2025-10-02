@@ -1,4 +1,4 @@
-name: NutriZen CI
+name: CI
 
 on:
   push:
@@ -22,14 +22,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Validate (Lint + Type + Format)
-        run: npm run validate
+      - name: Lint & Typecheck
+        run: npm run check
 
-      - name: Build packages
-        run: npm run build:packages || echo "No packages build step configured"
-
-      - name: Build web app
-        run: npm run build
+      - name: Build all (packages + app)
+        run: npm run build:all
 
       - name: Upload Next build artifact
         if: success()
