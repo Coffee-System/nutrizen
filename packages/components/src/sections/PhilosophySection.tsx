@@ -1,3 +1,1 @@
-export function PhilosophySection() {
-  return null;
-}
+export function PhilosophySection() { return null; }

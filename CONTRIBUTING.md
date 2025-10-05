@@ -76,45 +76,6 @@ If you want to get your hands dirty with code, here's the process. **Before you 
     ```
 6.  **Open a Pull Request (PR):** Go back to your fork on GitHub and open a PR to the original NutriZen repository, describing what you've done.
 
-### ✅ Pull Request Checklist
-
-Before marking a PR as ready for review, ensure:
-
-1. `npm run build:packages` passa sem erros
-2. `npm run typecheck` sem erros
-3. `npm run lint:check` sem warnings novos
-4. Atualizou docs se mudou comportamento público
-5. Variáveis de ambiente novas documentadas em `.env.example`
-6. Commit messages seguem **Conventional Commits**
-
-### 🧾 Conventional Commits
-
-Usamos o padrão para gerar changelogs de forma automatizada no futuro.
-Prefixes comuns:
-
-```
-feat: nova funcionalidade
-fix: correção de bug
-docs: somente documentação
-refactor: alteração interna sem mudança de comportamento
-chore: tarefas de manutenção
-perf: melhoria de performance
-test: adiciona ou ajusta testes
-build: mudanças em build tooling
-ci: mudanças em pipelines
-```
-
-Escopos recomendados:
-`ui`, `components`, `constants`, `tokens`, `web`, `infra`, `docs`.
-
-Exemplos:
-
-```
-feat(ui): adiciona variante ghost ao Button
-fix(web): corrige cálculo de macros diárias
-docs(architecture): inclui roadmap de backend
-```
-
 ---
 
 Thank you for dedicating your time and talent to NutriZen. Together, we are building something incredible!

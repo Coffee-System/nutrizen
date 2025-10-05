@@ -1,3 +1,1 @@
-export function CommunitySection() {
-  return null;
-}
+export function CommunitySection() { return null; }

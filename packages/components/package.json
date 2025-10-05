@@ -24,17 +24,9 @@
     "@nutrizen/constants": "*",
     "@nutrizen/types": "*",
     "@nutrizen/ui": "*",
-    "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Coffee-System/nutrizen.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Coffee-System/nutrizen/issues"
-  },
-  "homepage": "https://nutrizen.dev",
   "devDependencies": {
     "@nutrizen/tsconfig": "*",
     "@types/react": "^19",

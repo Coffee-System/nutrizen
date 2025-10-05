@@ -23,14 +23,6 @@
   "dependencies": {
     "react": "19.1.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Coffee-System/nutrizen.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Coffee-System/nutrizen/issues"
-  },
-  "homepage": "https://nutrizen.dev",
   "devDependencies": {
     "@types/react": "^19",
     "typescript": "^5"

@@ -1,3 +1,1 @@
-export function HeroSection() {
-  return null;
-}
+export function HeroSection() { return null; }
