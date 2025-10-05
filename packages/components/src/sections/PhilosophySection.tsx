@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { Card, Badge } from '@nutrizen/ui';
 import { CONTENT } from '@nutrizen/constants';
@@ -39,3 +40,6 @@ export function PhilosophySection() {
     </section>
   );
 }
+=======
+export function PhilosophySection() { return null; }
+>>>>>>> parent of 842df42 (Add tokens package and improve monorepo tooling)

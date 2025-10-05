@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use client';
 
 import React from 'react';
@@ -83,3 +84,6 @@ export function CommunitySection() {
     </section>
   );
 }
+=======
+export function CommunitySection() { return null; }
+>>>>>>> parent of 842df42 (Add tokens package and improve monorepo tooling)

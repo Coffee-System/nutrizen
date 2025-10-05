@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use client';
 
 import React from 'react';
@@ -63,3 +64,6 @@ export function HeroSection() {
     </section>
   );
 }
+=======
+export function HeroSection() { return null; }
+>>>>>>> parent of 842df42 (Add tokens package and improve monorepo tooling)
