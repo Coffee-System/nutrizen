@@ -6,13 +6,14 @@ This guide contains examples and standards for API development in NutriZen. We u
 
 API routes are located within `/apps/web/app/api`. Each route is a folder containing a `route.ts` file.
 
-* **Example:** The `GET /api/hello` route is implemented by the file `/apps/web/app/api/hello/route.ts`.
+- **Example:** The `GET /api/hello` route is implemented by the file `/apps/web/app/api/hello/route.ts`.
 
 ## Public API Route Standard
 
 A public route can be accessed by any client without authentication.
 
 **Example: `/apps/web/app/api/hello/route.ts`**
+
 ```ts
 // /apps/web/app/api/hello/route.ts
 
@@ -36,6 +37,7 @@ export async function GET(request: Request) {
 A protected route requires the user to be authenticated. It must verify the user's session before executing its logic.
 
 **Example: `/apps/web/app/api/profile/route.ts`**
+
 ```ts
 // /apps/web/app/api/profile/route.ts
 
@@ -49,7 +51,9 @@ export async function GET(request: Request) {
 
   try {
     // 2. Attempt to get the user's session from the request cookies.
-    const { data: { session } } = await supabase.auth.getSession();
+    const {
+      data: { session },
+    } = await supabase.auth.getSession();
 
     // 3. If there is no session, return a 401 Unauthorized error.
     if (!session) {
@@ -69,9 +73,11 @@ export async function GET(request: Request) {
     }
 
     return NextResponse.json(userProfile);
-
   } catch (error) {
-    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+    return NextResponse.json(
+      { error: 'Internal Server Error' },
+      { status: 500 }
+    );
   }
 }
 ```

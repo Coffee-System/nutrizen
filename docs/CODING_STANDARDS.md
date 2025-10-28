@@ -10,10 +10,10 @@ We use **ESLint** for static code analysis and **Prettier** for automatic format
 
 ## Naming Conventions
 
-* **Components (React):** Use `PascalCase`. Ex: `UserProfileCard.tsx`.
-* **Files and Folders:** Use `kebab-case` for file and folder names, except for components. Ex: `user-profile`.
-* **Variables and Functions:** Use `camelCase`. Ex: `const userProfile = getUserProfile();`.
-* **Types and Interfaces (TypeScript):** Use `PascalCase`. Ex: `interface UserProfile { ... }`.
+- **Components (React):** Use `PascalCase`. Ex: `UserProfileCard.tsx`.
+- **Files and Folders:** Use `kebab-case` for file and folder names, except for components. Ex: `user-profile`.
+- **Variables and Functions:** Use `camelCase`. Ex: `const userProfile = getUserProfile();`.
+- **Types and Interfaces (TypeScript):** Use `PascalCase`. Ex: `interface UserProfile { ... }`.
 
 ## Commit Style
 
@@ -21,16 +21,16 @@ We follow the [**Conventional Commits**](https://www.conventionalcommits.org/en/
 
 **Format:** `<type>(<optional scope>): <description>`
 
-* **Examples:**
-    * `feat: add Google login`
-    * `fix(auth): correct redirect bug after logout`
-    * `docs: update local setup guide`
+- **Examples:**
+  - `feat: add Google login`
+  - `fix(auth): correct redirect bug after logout`
+  - `docs: update local setup guide`
 
 ## General Code Guidelines
 
-* **TypeScript:**
-    * Use explicit types for component props, parameters, and function returns.
-    * Prefer interfaces (`interface`) to define the shape of objects and types (`type`) for unions and more complex types.
-* **React:**
-    * Prefer functional components with Hooks.
-    * Keep components small and focused on a single responsibility.
+- **TypeScript:**
+  - Use explicit types for component props, parameters, and function returns.
+  - Prefer interfaces (`interface`) to define the shape of objects and types (`type`) for unions and more complex types.
+- **React:**
+  - Prefer functional components with Hooks.
+  - Keep components small and focused on a single responsibility.

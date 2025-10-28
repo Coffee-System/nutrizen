@@ -38,6 +38,7 @@ export function Logo({
   const finalHeight = height || finalWidth;
 
   return (
+    // eslint-disable-next-line @next/next/no-img-element
     <img
       src={src}
       alt={alt}

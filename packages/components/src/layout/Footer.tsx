@@ -15,12 +15,12 @@ export function Footer() {
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
             <span className="text-p5 text-sm">{CONTENT.FOOTER.COPYRIGHT}</span>
           </div>
-          
+
           <div className="flex items-center space-x-8 mb-4 md:mb-0">
             {CONTENT.FOOTER.LINKS.map((link) => (
-              <a 
+              <a
                 key={link.href}
-                href={link.href} 
+                href={link.href}
                 className="text-p5 hover:text-p1 transition-colors text-sm"
               >
                 {link.label}

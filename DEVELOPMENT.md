@@ -6,8 +6,8 @@ Hello, contributor! We're thrilled to have you here. This guide will help you se
 
 Before you begin, ensure you have the following tools installed:
 
-* **Node.js:** Version 18.x or higher. This includes **npm** (version 7+). [Download here](https://nodejs.org/)
-* **Git:** Essential for version control. [Download here](https://git-scm.com/)
+- **Node.js:** Version 18.x or higher. This includes **npm** (version 7+). [Download here](https://nodejs.org/)
+- **Git:** Essential for version control. [Download here](https://git-scm.com/)
 
 ## 1. Project Setup
 

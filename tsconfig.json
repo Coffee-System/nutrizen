@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./apps/web" },
+    { "path": "./packages/components" },
+    { "path": "./packages/constants" },
+    { "path": "./packages/types" },
+    { "path": "./packages/ui" }
+  ]
+}
