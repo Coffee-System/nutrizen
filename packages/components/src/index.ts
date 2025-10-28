@@ -1,8 +1,4 @@
-// Layout Components
-export { Footer } from './layout/Footer';
+// Exports temporariamente removidos - aguardando reconstrução da nova landing page
+// Os componentes antigos foram neutralizados e serão substituídos
 
-// Section Components
-export { HeroSection } from './sections/HeroSection';
-export { PhilosophySection } from './sections/PhilosophySection';
-export { FeaturesSection } from './sections/FeaturesSection';
-export { CommunitySection } from './sections/CommunitySection';
+export {};
